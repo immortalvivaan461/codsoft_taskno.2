@@ -24,7 +24,7 @@ basic_Landing_page/
 ## 🔧 How to Run Locally
 
 1. Clone the repository:
-   git clone https://github.com/immortalvivaan461/basic_Landing_page.git
+   git clone https://github.com/immortalvivaan461/codsoft_taskno.2
 
 2. Open the project folder:
    cd basic_Landing_page
