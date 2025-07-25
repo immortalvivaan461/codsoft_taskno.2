@@ -35,7 +35,7 @@ basic_Landing_page/
 
 ## 📸 Preview
 
-https://immortalvivaan461.github.io/basic_Landing_page/
+https://immortalvivaan461.github.io/codsoft_taskno.1b/
 
 ## 💡 Learnings
 
