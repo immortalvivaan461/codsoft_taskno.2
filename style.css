@@ -1,0 +1,368 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* ✅ important for mobile */
+    padding: 1rem 2rem;
+    background-color: #1a1a2e;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Logo */
+header>h1 {
+    font-size: clamp(1.5rem, 5vw + 1rem, 3rem);
+    color: #38bdf8;
+}
+
+/* Navigation */
+.header-btn-tab {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    /* ✅ Wrap on small screens */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
+
+/* Buttons */
+.btn-list>a {
+    display: inline-block;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-weight: 600;
+    color: aliceblue;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-list>a:hover {
+    background-color: #38bdf8;
+    color: #0f172a;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: center;
+        position: unset;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+}
+
+/* home section */
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(img/home.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+}
+
+/* Headline with clamp */
+.headline {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+/* Subtext with clamp */
+.subtext {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+/* CTA Button */
+.btn {
+    padding: 0.75rem 2rem;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e64a19;
+}
+
+/* Feature section */
+
+.features {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.features-header h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 0.5rem;
+}
+
+.features-header p {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    margin-bottom: 3rem;
+    color: #555;
+}
+
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.feature-item {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+}
+
+.feature-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    margin-bottom: 0.5rem;
+}
+
+.feature-item p {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    color: #666;
+}
+
+/* About section */
+
+.about {
+    background-color: #ffffff;
+    padding: 4rem 2rem;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1 1 400px;
+}
+
+.about-text h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    font-size: clamp(1rem, 2.2vw, 1.2rem);
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1 1 400px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* blog section */
+
+.blog {
+    background-color: #f9f9f9;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.blog-header h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 0.5rem;
+}
+
+.blog-header p {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    margin-bottom: 3rem;
+    color: #555;
+}
+
+.blog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.blog-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 340px;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+}
+
+.blog-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blog-content {
+    padding: 1.5rem;
+}
+
+.blog-content h3 {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    margin-bottom: 0.5rem;
+}
+
+.blog-content p {
+    font-size: clamp(0.95rem, 2.3vw, 1.1rem);
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #ff5722;
+    font-weight: bold;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+
+/* contact section */
+
+
+.contact {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e64a19;
+}
+
+
+/* footer section */
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #ff5722;
+}
