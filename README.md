@@ -35,7 +35,7 @@ basic_Landing_page/
 
 ## 📸 Preview
 
-(You can add a live preview or screenshot if hosted online)
+https://immortalvivaan461.github.io/basic_Landing_page/
 
 ## 💡 Learnings
 
